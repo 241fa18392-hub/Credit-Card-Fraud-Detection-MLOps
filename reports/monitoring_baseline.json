@@ -1,0 +1,25 @@
+{
+  "source": "reports/evaluation_report.json",
+  "model_version": "6",
+  "metrics": {
+    "accuracy": 0.9753110351390406,
+    "precision": 0.05638586956521739,
+    "recall": 0.8736842105263158,
+    "f1": 0.10593490746649649,
+    "average_precision_pr_auc": 0.7194169442506461,
+    "roc_auc": 0.9656861169357349,
+    "confusion_matrix": [
+      [
+        55262,
+        1389
+      ],
+      [
+        12,
+        83
+      ]
+    ],
+    "test_rows": 56746
+  },
+  "initialized_at": "2026-11-07T04:49:48.717092+00:00",
+  "updated_after_retraining": true
+}

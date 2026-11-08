@@ -1,0 +1,124 @@
+{
+  "project": "Credit Card Fraud Detection",
+  "verified_on": "2026-11-07",
+  "environment": {
+    "python": "3.13.15",
+    "virtual_environment": "C:\\v\\fraud"
+  },
+  "dataset": {
+    "path": "data/raw/creditcard.csv",
+    "target_column": "Class",
+    "class_mapping": {
+      "0": "normal",
+      "1": "fraud"
+    },
+    "rows_original": 284807,
+    "columns": 31,
+    "normal_transactions": 284315,
+    "fraud_transactions": 492,
+    "missing_values": 0,
+    "duplicate_rows_detected": 1081,
+    "duplicate_rows_removed_from_derived_data_before_split": 1081,
+    "sha256_before_and_after": "76274B691B16A6C49D3F159C883398E03CCD6D1EE12D9D8EE38F4B4B98551A89",
+    "preserved": true
+  },
+  "labs": {
+    "lab_1": "PASSED",
+    "lab_2": "PASSED",
+    "lab_3": "PASSED",
+    "lab_4": "PASSED",
+    "lab_5": "PASSED",
+    "lab_6": "PASSED",
+    "lab_7": "PASSED",
+    "lab_8": "PASSED",
+    "lab_9": "PASSED",
+    "lab_10": "PASSED",
+    "lab_11": "PASSED",
+    "lab_12": "PASSED",
+    "lab_13": "PASSED"
+  },
+  "pipeline": {
+    "orchestrator": "src/mlops_pipeline/13_end_to_end_pipeline.py",
+    "overall_status": "PASSED",
+    "stage_count": 12,
+    "report": "logs/lab13_execution_report.json",
+    "train_rows": 226980,
+    "test_rows": 56746,
+    "model": "LogisticRegression",
+    "class_weight": "balanced"
+  },
+  "test_suite": "9 passed",
+  "python_compile_check": "passed",
+  "model_metrics": {
+    "accuracy": 0.9753110351390406,
+    "precision": 0.05638586956521739,
+    "recall": 0.8736842105263158,
+    "f1": 0.10593490746649649,
+    "average_precision_pr_auc": 0.7194169442506461,
+    "roc_auc": 0.9656861169357349,
+    "confusion_matrix": [
+      [55262, 1389],
+      [12, 83]
+    ]
+  },
+  "quality_gate": {
+    "metric": "average_precision",
+    "value": 0.7194169442506461,
+    "minimum_value": 0.5,
+    "status": "PASSED"
+  },
+  "failure_injection": {
+    "status": "PASSED",
+    "detected_scenarios": [
+      "missing_target_column",
+      "invalid_target_label",
+      "missing_feature_value",
+      "infinite_feature_value",
+      "missing_model_artifact"
+    ],
+    "scenario_count": 5
+  },
+  "mlflow": {
+    "tracking_store": "project-local mlflow.db",
+    "experiment_name": "credit_card_fraud_detection",
+    "registered_model_name": "Credit_Card_Fraud_Production_Model",
+    "registered_model_version": "7",
+    "production_alias": "production",
+    "run_id": "23f208a4df7c42a8b262c4374765d7b7",
+    "evaluation_metrics_logged": true
+  },
+  "api": {
+    "health": "passed",
+    "sample_prediction": "passed",
+    "sample_labels": [0, 0],
+    "deployment_bundle_load": "passed"
+  },
+  "deployment": {
+    "bundle": "verified",
+    "dockerfile_present": true,
+    "docker_image_build": "not run; Docker CLI unavailable",
+    "kubernetes": "not run; kubectl unavailable and no project manifests"
+  },
+  "lab12_monitoring": {
+    "status": "PASSED",
+    "drifted_features": 0,
+    "total_features_monitored": 30,
+    "probability_psi": 0.0002904052471443504,
+    "average_precision": 0.7194169442506461,
+    "retraining_triggered_on_final_run": false,
+    "forced_retraining_path": "PASSED"
+  },
+  "lab13_end_to_end": {
+    "status": "PASSED",
+    "labs_1_through_12": "PASSED",
+    "report": "logs/lab13_execution_report.json"
+  },
+  "github_actions": "Workflow files are present; remote execution requires a pushed repository.",
+  "changes": [
+    "Registered trained models in the MLflow Model Registry and assigned the production alias after the quality gate.",
+    "Logged held-out evaluation metrics to the same MLflow training run.",
+    "Added Dockerfile, .dockerignore, and pinned API runtime requirements.",
+    "Added Lab 12 performance/data/prediction drift monitoring and triggered-retraining workflow.",
+    "Added Lab 13 ordered end-to-end orchestrator with per-lab status and duration reporting."
+  ]
+}

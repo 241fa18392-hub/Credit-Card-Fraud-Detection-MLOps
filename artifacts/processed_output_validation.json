@@ -1,0 +1,11 @@
+{
+  "status": "PASSED",
+  "X_train_shape": [
+    226980,
+    30
+  ],
+  "X_test_shape": [
+    56746,
+    30
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "model_name": "Credit_Card_Fraud_Production_Model",
+  "version": "1",
+  "stage": "Production",
+  "metric": "average_precision",
+  "metric_value": 0.7194169442506461
+}

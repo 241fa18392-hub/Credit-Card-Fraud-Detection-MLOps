@@ -1,0 +1,6 @@
+# Lab 5 — Model Training and Registry
+
+Main script: `src/mlops_pipeline/05_*.py`.
+
+Run the script from the project root with `python src/mlops_pipeline/<script>.py`.
+See `artifacts/`, `models/`, `outputs/`, `reports/`, and `logs/` for generated results.

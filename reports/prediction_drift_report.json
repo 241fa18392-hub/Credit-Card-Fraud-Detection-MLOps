@@ -1,0 +1,13 @@
+{
+  "status": "PASSED",
+  "reference_source": "data/processed/X_train_final.npy",
+  "current_source": "data/processed/X_test_final.npy",
+  "reference_rows": 226980,
+  "current_rows": 56746,
+  "reference_positive_rate": 0.02507269362939466,
+  "current_positive_rate": 0.025940154372114332,
+  "positive_rate_delta": 0.0008674607427196709,
+  "probability_psi": 0.0002904052471443504,
+  "reference_probability_mean": 0.07321358472108841,
+  "current_probability_mean": 0.07308992743492126
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASSED",
+  "rows": 284807,
+  "columns": 31,
+  "target": "Class",
+  "class_distribution": {
+    "0": 284315,
+    "1": 492
+  },
+  "missing_values": 0,
+  "duplicate_rows": 1081
+}

@@ -1,0 +1,162 @@
+{
+  "status": "PASSED",
+  "reference_source": "data/processed/X_train_raw.csv",
+  "current_source": "data/processed/X_test_raw.csv",
+  "reference_rows": 226980,
+  "current_rows": 56746,
+  "psi_threshold": 0.2,
+  "drifted_feature_count": 0,
+  "drifted_features": [],
+  "features": [
+    {
+      "feature": "Time",
+      "psi": 0.00026580539990171106,
+      "drift_detected": false
+    },
+    {
+      "feature": "V1",
+      "psi": 0.00022954461793531862,
+      "drift_detected": false
+    },
+    {
+      "feature": "V2",
+      "psi": 0.00014228072470666095,
+      "drift_detected": false
+    },
+    {
+      "feature": "V3",
+      "psi": 0.00034760694472078113,
+      "drift_detected": false
+    },
+    {
+      "feature": "V4",
+      "psi": 7.695842617578591e-05,
+      "drift_detected": false
+    },
+    {
+      "feature": "V5",
+      "psi": 0.00025606165568658063,
+      "drift_detected": false
+    },
+    {
+      "feature": "V6",
+      "psi": 0.00018097119802587517,
+      "drift_detected": false
+    },
+    {
+      "feature": "V7",
+      "psi": 6.784579238855188e-05,
+      "drift_detected": false
+    },
+    {
+      "feature": "V8",
+      "psi": 0.00011675504543078061,
+      "drift_detected": false
+    },
+    {
+      "feature": "V9",
+      "psi": 0.0001596876779098539,
+      "drift_detected": false
+    },
+    {
+      "feature": "V10",
+      "psi": 9.531730747946864e-05,
+      "drift_detected": false
+    },
+    {
+      "feature": "V11",
+      "psi": 0.0003077787498959328,
+      "drift_detected": false
+    },
+    {
+      "feature": "V12",
+      "psi": 0.00036731664016718973,
+      "drift_detected": false
+    },
+    {
+      "feature": "V13",
+      "psi": 0.00021444492618285718,
+      "drift_detected": false
+    },
+    {
+      "feature": "V14",
+      "psi": 0.00020350121505947904,
+      "drift_detected": false
+    },
+    {
+      "feature": "V15",
+      "psi": 9.477400801037325e-05,
+      "drift_detected": false
+    },
+    {
+      "feature": "V16",
+      "psi": 0.00026784681831208354,
+      "drift_detected": false
+    },
+    {
+      "feature": "V17",
+      "psi": 0.0001955824079852228,
+      "drift_detected": false
+    },
+    {
+      "feature": "V18",
+      "psi": 0.00021485705104180877,
+      "drift_detected": false
+    },
+    {
+      "feature": "V19",
+      "psi": 0.00021901406381916272,
+      "drift_detected": false
+    },
+    {
+      "feature": "V20",
+      "psi": 0.0001844149747083791,
+      "drift_detected": false
+    },
+    {
+      "feature": "V21",
+      "psi": 0.00022689525503800354,
+      "drift_detected": false
+    },
+    {
+      "feature": "V22",
+      "psi": 0.00021785248414938073,
+      "drift_detected": false
+    },
+    {
+      "feature": "V23",
+      "psi": 0.00047205678657452415,
+      "drift_detected": false
+    },
+    {
+      "feature": "V24",
+      "psi": 7.084145122494819e-05,
+      "drift_detected": false
+    },
+    {
+      "feature": "V25",
+      "psi": 0.0003901625720071554,
+      "drift_detected": false
+    },
+    {
+      "feature": "V26",
+      "psi": 0.0001284368439576536,
+      "drift_detected": false
+    },
+    {
+      "feature": "V27",
+      "psi": 0.0002172481556064206,
+      "drift_detected": false
+    },
+    {
+      "feature": "V28",
+      "psi": 0.0003488947449792275,
+      "drift_detected": false
+    },
+    {
+      "feature": "Amount",
+      "psi": 0.0002495406083582723,
+      "drift_detected": false
+    }
+  ]
+}

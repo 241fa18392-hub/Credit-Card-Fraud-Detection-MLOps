@@ -1,0 +1,9 @@
+{
+  "status": "PASSED",
+  "random_state": 42,
+  "train_rows": 226980,
+  "test_rows": 56746,
+  "duplicate_rows_removed_before_split": 1081,
+  "feature_count": 30,
+  "note": "The configured random seed and stratified split are recorded. A second independent full training run comparison was not performed."
+}

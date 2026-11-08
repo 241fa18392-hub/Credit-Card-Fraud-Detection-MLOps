@@ -1,0 +1,11 @@
+{
+  "model_name": "Credit_Card_Fraud_Production_Model",
+  "model_type": "LogisticRegression",
+  "status": "Production",
+  "features": 30,
+  "training_rows": 226980,
+  "mlflow_run_id": "23f208a4df7c42a8b262c4374765d7b7",
+  "mlflow_model_version": "7",
+  "production_metric": "average_precision",
+  "production_metric_value": 0.7194169442506461
+}

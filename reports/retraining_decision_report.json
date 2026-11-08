@@ -1,0 +1,15 @@
+{
+  "retraining_required": false,
+  "reasons": [],
+  "thresholds": {
+    "psi_threshold": 0.2,
+    "performance_drop_threshold": 0.05,
+    "prediction_rate_delta_threshold": 0.05
+  },
+  "status": "PASSED",
+  "retraining_enabled": true,
+  "retraining_status": "NOT_REQUIRED",
+  "started_at": "2026-11-07T06:01:12.762860+00:00",
+  "duration_seconds": 1.064,
+  "completed_at": "2026-11-07T06:01:13.826481+00:00"
+}

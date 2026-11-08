@@ -1,0 +1,6 @@
+{
+  "metric": "average_precision",
+  "value": 0.7194169442506461,
+  "minimum_value": 0.5,
+  "status": "PASSED"
+}

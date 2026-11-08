@@ -1,0 +1,26 @@
+{
+  "status": "PASSED",
+  "scenarios": [
+    {
+      "scenario": "missing_target_column",
+      "detected": true
+    },
+    {
+      "scenario": "invalid_target_label",
+      "detected": true
+    },
+    {
+      "scenario": "missing_feature_value",
+      "detected": true
+    },
+    {
+      "scenario": "infinite_feature_value",
+      "detected": true
+    },
+    {
+      "scenario": "missing_model_artifact",
+      "detected": true
+    }
+  ],
+  "note": "Safe, in-memory fault simulations; source dataset and model files were not modified."
+}

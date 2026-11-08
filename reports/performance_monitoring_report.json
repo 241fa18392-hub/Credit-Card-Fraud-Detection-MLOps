@@ -1,0 +1,20 @@
+{
+  "status": "PASSED",
+  "source": "data/processed/X_test_final.npy",
+  "baseline_source": "reports/evaluation_report.json",
+  "baseline_model_version": "6",
+  "metric": "average_precision_pr_auc",
+  "baseline": 0.7194169442506461,
+  "current": 0.7194169442506461,
+  "drop_from_baseline": 0.0,
+  "metrics": {
+    "accuracy": 0.9753110351390406,
+    "precision": 0.05638586956521739,
+    "recall": 0.8736842105263158,
+    "f1": 0.10593490746649649,
+    "average_precision_pr_auc": 0.7194169442506461,
+    "roc_auc": 0.9656861169357349,
+    "rows": 56746,
+    "positive_rate": 0.025940154372114332
+  }
+}

@@ -1,0 +1,51 @@
+project:
+  name: credit_card_fraud_detection
+  random_state: 42
+
+data:
+  raw_path: data/raw/creditcard.csv
+  processed_dir: data/processed
+  target_column: Class
+  id_column: null
+
+split:
+  test_size: 0.20
+  random_state: 42
+
+model:
+  # Logistic Regression is a transparent baseline for the first reproducible run.
+  max_iter: 1000
+  class_weight: balanced
+  random_state: 42
+
+mlflow:
+  tracking_uri: ""
+  experiment_name: credit_card_fraud_detection
+
+registry:
+  model_name: Credit_Card_Fraud_Production_Model
+  decision_metric: average_precision
+
+quality_gate:
+  metric: average_precision
+  minimum_value: 0.50
+
+lab9:
+  repetitions: 3
+
+lab12:
+  psi_bins: 10
+  psi_threshold: 0.20
+  performance_metric: average_precision_pr_auc
+  performance_drop_threshold: 0.05
+  prediction_rate_delta_threshold: 0.05
+  retraining_enabled: true
+
+paths:
+  preprocessor: models/preprocessor.pkl
+  model: models/fraud_model.pkl
+  full_pipeline: models/fraud_full_pipeline.pkl
+  evaluation_report: reports/evaluation_report.json
+  quality_gate_report: reports/quality_gate_report.json
+  failure_report: reports/failure_report.json
+  inference_output: outputs/inference_predictions.csv

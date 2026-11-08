@@ -1,0 +1,9 @@
+{
+  "status": "PASSED",
+  "deployment_files": [
+    "deployment/model.pkl",
+    "deployment/preprocessor.pkl",
+    "deployment/model_metadata.json"
+  ],
+  "verified_loadable": true
+}
